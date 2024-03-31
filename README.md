@@ -1,4 +1,4 @@
-# Accessibility Recommendations Project README
+# MaxwellAI Accessibility Recommendations API README
 
 This project aims to provide accessibility recommendations based on an input assessment of various technologies. The core functionality lies within the JavaScript code, particularly the `getAccessibilityAnalysis` function, which analyzes the input assessment and generates recommendations using a Language Model (LLM).
 
@@ -29,15 +29,23 @@ This project aims to provide accessibility recommendations based on an input ass
    - Once the analysis is complete, the HTML page displays a table summarizing recommendations.
    - Recommendations include technology, diagnosis, recommendation, impact estimate, and recommended sites.
 
+## How to Use
+...
+(Previous sections detailing usage instructions)
+
 ## Notes:
 
-- **Processing Time**: The `getAccessibilityAnalysis` function takes approximately 60 seconds to complete its execution. Therefore, when designing the user interface, it's crucial to account for this delay to provide a seamless experience for the end user. Examples of input, output recommendations, and schemas can be found in the `assets/json` folder.
+- **Processing Time**: The `getAccessibilityAnalysis` function takes approximately 60 seconds to complete its execution. Therefore, when designing the user interface, it's crucial to account for this delay to provide a seamless experience for the end user.
 
 - **Non-Deterministic Results**: The results produced by the function are non-deterministic. Even with the same input data, the function may generate different variations of the output. It's essential to set proper user expectations and inform them about this variability beforehand.
 
-- **Potential Mistakes**: This functionality is based on technology that can make mistakes. While the information provided can be valuable, there is a possibility of errors. It's advised to use the generated recommendations as a reference and verify them thoroughly before implementation. Users should be cautioned about the possibility of inaccuracies and encouraged to double-check the recommendations.
-
 - **Intermittent Failures**: The function may experience intermittent failures. If this occurs, it's worth retrying the function, as sometimes it works after retrying. However, be aware that retrying may potentially increase the wait time to 2 minutes or more.
+
+### Schema and Examples:
+
+- **Schema and Examples**: Examples of input, output recommendations, and schemas can be found in the `assets/json` folder.
+
+- **Potential Mistakes**: This functionality is based on technology that can make mistakes. While the information provided can be valuable, there is a possibility of errors. It's advised to use the generated recommendations as a reference and verify them thoroughly before implementation. Users should be cautioned about the possibility of inaccuracies and encouraged to double-check the recommendations.
 
 ### Creating a Satisfying User Experience:
 
@@ -47,6 +55,7 @@ Given the potential delays in processing and intermittent failures, here are som
 - **Interactive Loading Screen**: Design an interactive loading screen with engaging visuals or messages to keep users informed and entertained during the processing period.
 - **Progressive Disclosure**: Display partial results or interim progress updates to keep users informed about the ongoing analysis.
 - **Error Handling**: Implement robust error handling mechanisms to gracefully handle intermittent failures and provide clear instructions to users on how to retry or proceed.
+
 
 
 ## Keep in Mind:
