@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "accessibility_assessment": {
+        "questions": [
+          {
+            "question": "Is the keyboard tactile feedback sufficient?",
+            "answer": 4,
+            "scale": [1, 5]
+          },
+          {
+            "question": "Are the screen brightness and contrast adjustable?",
+            "answer": 3,
+            "scale": [1, 5]
+          },
+          {
+            "question": "Are tactile markers available for navigation?",
+            "answer": 5,
+            "scale": [1, 5]
+          },
+          {
+            "question": "Is the product lightweight and portable?",
+            "answer": 4,
+            "scale": [1, 5]
+          }
+        ],
+        "final_score": 4.0,
+        "final_score_scale": [1, 5]
+      }
+    },
+    {
+      "name": "Lenovo ThinkCentre M720q Tiny Desktop",
+      "accessibility_assessment": {
+        "questions": [
+          {
+            "question": "Is the device's casing easy to open for maintenance?",
+            "answer": 4,
+            "scale": [1, 5]
+          },
+          {
+            "question": "Are ports and connectors well-labeled?",
+            "answer": 5,
+            "scale": [1, 5]
+          },
+          {
+            "question": "Is the device easy to mount in various orientations?",
+            "answer": 3,
+            "scale": [1, 5]
+          },
+          {
+            "question": "Is the user manual provided in accessible formats?",
+            "answer": 4,
+            "scale": [1, 5]
+          }
+        ],
+        "final_score": 4.0,
+        "final_score_scale": [1, 5]
+      }
+    }
+  ]
+}

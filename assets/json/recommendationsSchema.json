@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Accessibility Recommendations",
+    "description": "Schema for output data providing recommendations for improving accessibility scores of technologies.",
+    "type": "object",
+    "properties": {
+      "recommendations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "technology": {
+              "type": "string"
+            },
+            "improvements": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "diagnosis": {
+                    "type": "string"
+                  },
+                  "recommendation": {
+                    "type": "string"
+                  },
+                  "impact_estimate": {
+                    "type": "string"
+                  }
+                },
+                "required": ["diagnosis", "recommendation", "impact_estimate"]
+              }
+            }
+          },
+          "required": ["technology", "improvements"]
+        }
+      }
+    },
+    "required": ["recommendations"]
+  }
+  

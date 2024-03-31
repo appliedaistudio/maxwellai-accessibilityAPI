@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://example.com/schemas/lenovo-accessibility-input.json",
+  "title": "Lenovo Accessibility Input Schema",
+  "description": "Schema for input data representing accessibility assessments of Lenovo technical products.",
+  "type": "object",
+  "properties": {
+    "LenovoAccessibilityInput": {
+      "type": "object",
+      "properties": {
+        "products": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "accessibility_assessment": {
+                "type": "object",
+                "properties": {
+                  "questions": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "question": {
+                          "type": "string"
+                        },
+                        "answer": {
+                          "type": "integer"
+                        },
+                        "scale": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer"
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        }
+                      },
+                      "required": ["question", "answer", "scale"]
+                    }
+                  },
+                  "final_score": {
+                    "type": "number"
+                  },
+                  "final_score_scale": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                },
+                "required": ["questions", "final_score", "final_score_scale"]
+              }
+            },
+            "required": ["name", "accessibility_assessment"]
+          }
+        }
+      },
+      "required": ["products"]
+    }
+  }
+}
