@@ -1,40 +1,51 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Accessibility Recommendations",
-    "description": "Schema for output data providing recommendations for improving accessibility scores of technologies.",
-    "type": "object",
-    "properties": {
-      "recommendations": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "technology": {
-              "type": "string"
-            },
-            "improvements": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "diagnosis": {
-                    "type": "string"
-                  },
-                  "recommendation": {
-                    "type": "string"
-                  },
-                  "impact_estimate": {
-                    "type": "string"
-                  }
-                },
-                "required": ["diagnosis", "recommendation", "impact_estimate"]
-              }
-            }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/recommendations.schema.json",
+  "title": "Recommendations",
+  "description": "Schema for providing creative recommendations to improve technology accessibility.",
+  "type": "object",
+  "properties": {
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "technology": {
+            "type": "string",
+            "description": "The name of the technology for which recommendations are provided."
           },
-          "required": ["technology", "improvements"]
-        }
+          "improvements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "diagnosis": {
+                  "type": "string",
+                  "description": "The identified issue or challenge affecting the technology's accessibility."
+                },
+                "recommendation": {
+                  "type": "string",
+                  "description": "A creative and non-obvious recommendation to address the diagnosed issue."
+                },
+                "impact_estimate": {
+                  "type": "string",
+                  "description": "An estimation of the potential impact on accessibility if the recommendation is implemented."
+                },
+                "recommended_sites": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "description": "Google searches providing relevant material related to the recommendation."
+                  }
+                }
+              },
+              "required": ["diagnosis", "recommendation", "impact_estimate", "recommended_sites"]
+            }
+          }
+        },
+        "required": ["technology", "improvements"]
       }
-    },
-    "required": ["recommendations"]
-  }
-  
+    }
+  },
+  "required": ["recommendations"]
+}

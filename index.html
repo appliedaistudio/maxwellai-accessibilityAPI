@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Function Call Example</title>
+    <title>Accessibility Recommendations</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
     <script src="./assets/js/accessibility.js" defer></script>
 </head>
 <body>
-    <h1>JavaScript Function Call Example</h1>
+    <h1>Accessibility Recommendations</h1>
     <button id="getAccessibilityInfo">Get Accessibility Information</button>
     <div id="accessibilityInfo"></div>
 
@@ -78,9 +92,33 @@
                     ]
                 };
 
-                // Call the function and pass JSON data as argument
-                var accessibilityInfo = await getAccessibilityAnalysis(inputData);
-                document.getElementById("accessibilityInfo").innerText = accessibilityInfo;
+                // Call the function and pass the license key and JSON input data as arguments
+                const licenseKey = "https://api.openai.com/v1/chat/completions###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###gpt-4";
+                var accessibilityInfoJson = await getAccessibilityAnalysis(licenseKey, inputData);
+                const recommendations = accessibilityInfoJson.recommendations;
+
+                // Construct HTML table
+                var tableHtml = "<table>";
+                tableHtml += "<tr><th>Technology</th><th>Diagnosis</th><th>Recommendation</th><th>Impact Estimate</th><th>Recommended Sites</th></tr>";
+                recommendations.forEach(function(recommendation) {
+                    recommendation.improvements.forEach(function(improvement) {
+                        tableHtml += "<tr>";
+                        tableHtml += "<td>" + recommendation.technology + "</td>";
+                        tableHtml += "<td>" + improvement.diagnosis + "</td>";
+                        tableHtml += "<td>" + improvement.recommendation + "</td>";
+                        tableHtml += "<td>" + improvement.impact_estimate + "</td>";
+                        tableHtml += "<td>";
+                        improvement.recommended_sites.forEach(function(site) {
+                            tableHtml += "<a href='" + site + "' target='_blank'>" + "site" + "</a><br>";
+                        });
+                        tableHtml += "</td>";
+                        tableHtml += "</tr>";
+                    });
+                });
+                tableHtml += "</table>";
+
+                // Display table
+                document.getElementById("accessibilityInfo").innerHTML = tableHtml;
             } catch (error) {
                 console.error('Error occurred:', error);
             }

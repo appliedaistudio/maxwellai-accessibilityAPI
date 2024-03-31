@@ -1,50 +1,77 @@
 {
-    "recommendations": [
+  "recommendations": [
       {
-        "technology": "Lenovo ThinkPad X1 Carbon",
-        "improvements": [
-          {
-            "diagnosis": "Users reported that the current keyboard lacks sufficient tactile feedback, which can lead to typing errors and discomfort during prolonged use.",
-            "recommendation": "Consider enhancing keyboard tactile feedback by using high-quality switches with better key travel.",
-            "impact_estimate": "Improving keyboard tactile feedback is expected to significantly enhance user comfort and typing accuracy, potentially resulting in a 10-15% increase in overall accessibility score."
-          },
-          {
-            "diagnosis": "Some users find the current screen brightness and contrast settings inadequate, especially in low-light environments or for users with visual impairments.",
-            "recommendation": "Provide more granular control over screen brightness and contrast settings to accommodate a wider range of user preferences.",
-            "impact_estimate": "Enhancing screen brightness and contrast control options can greatly improve user experience, potentially increasing the overall accessibility score by 8-12%."
-          },
-          {
-            "diagnosis": "Users with visual impairments struggle to navigate the device efficiently due to the lack of tactile markers, resulting in difficulty locating key controls or buttons.",
-            "recommendation": "Implement additional tactile markers for navigation, especially for users with visual impairments, such as raised dots or textured surfaces.",
-            "impact_estimate": "Adding tactile markers for navigation can significantly improve usability for users with visual impairments, potentially increasing the overall accessibility score by 12-18%."
-          },
-          {
-            "diagnosis": "Some users find the current product weight prohibitive for portability, especially when carrying it for extended periods.",
-            "recommendation": "Explore lightweight materials or design modifications to further enhance portability without sacrificing durability.",
-            "impact_estimate": "Reducing the weight of the product can make it more portable and convenient for users, potentially resulting in a 5-8% increase in overall accessibility score."
-          }
-        ]
+          "technology": "Lenovo ThinkPad X1 Carbon",
+          "improvements": [
+              {
+                  "diagnosis": "Users reported that the current keyboard lacks sufficient tactile feedback (score: 3), which can lead to typing errors and discomfort during prolonged use.",
+                  "recommendation": "Introduce a modular keyboard design that allows users to customize the layout and switch types based on their preferences. Additionally, integrate an AI-driven adaptive typing assistant that learns and adjusts to individual typing patterns, providing real-time feedback and suggestions for improvement.",
+                  "impact_estimate": "Implementing a modular keyboard design and adaptive typing assistant is estimated to revolutionize the typing experience, potentially increasing the overall accessibility score by 2-4 points.",
+                  "recommended_sites": [
+                      "https://www.google.com/search?q=modular+keyboard+design+ideas",
+                      "https://www.google.com/search?q=AI+driven+adaptive+typing+assistant"
+                  ]
+              },
+              {
+                  "diagnosis": "Some users find the current screen brightness and contrast settings inadequate (score: 4), especially in low-light environments or for users with visual impairments.",
+                  "recommendation": "Incorporate a dynamic display technology that adjusts not only brightness and contrast but also color temperature based on user preferences and environmental conditions. Additionally, integrate a virtual reality-based screen calibration tool that allows users to fine-tune display settings through immersive simulations.",
+                  "impact_estimate": "Adopting dynamic display technology and a virtual reality-based calibration tool can redefine visual comfort and accuracy, potentially increasing the overall accessibility score by 3-5 points.",
+                  "recommended_sites": [
+                      "https://www.google.com/search?q=dynamic+display+technology",
+                      "https://www.google.com/search?q=virtual+reality+screen+calibration+tools"
+                  ]
+              },
+              {
+                  "diagnosis": "Users with visual impairments struggle to navigate the device efficiently due to the lack of tactile markers (score: 2), resulting in difficulty locating key controls or buttons.",
+                  "recommendation": "Implement a novel haptic feedback system that utilizes micro-vibrations and texture variations to create tactile landmarks on the device's surface, aiding navigation. Furthermore, integrate a machine learning-based gesture recognition feature that allows users to execute commands through intuitive hand movements.",
+                  "impact_estimate": "Introducing a haptic feedback system and gesture recognition feature can redefine user interaction paradigms, potentially increasing the overall accessibility score by 4-6 points.",
+                  "recommended_sites": [
+                      "https://www.google.com/search?q=haptic+feedback+system+design",
+                      "https://www.google.com/search?q=machine+learning+gesture+recognition"
+                  ]
+              },
+              {
+                  "diagnosis": "Some users find the current product weight prohibitive for portability (score: 5), especially when carrying it for extended periods.",
+                  "recommendation": "Explore the use of advanced lightweight materials inspired by biomimicry principles, such as carbon fiber composites with hierarchical structures. Additionally, integrate a smart weight distribution system that dynamically redistributes weight to minimize user fatigue.",
+                  "impact_estimate": "Adopting biomimicry-inspired lightweight materials and smart weight distribution can redefine the notion of portable computing, potentially increasing the overall accessibility score by 3-5 points.",
+                  "recommended_sites": [
+                      "https://www.google.com/search?q=biomimicry+inspired+lightweight+materials",
+                      "https://www.google.com/search?q=smart+weight+distribution+systems"
+                  ]
+              }
+          ]
       },
       {
-        "technology": "Lenovo ThinkCentre M720q Tiny Desktop",
-        "improvements": [
-          {
-            "diagnosis": "Users, particularly those with visual impairments, struggle to identify ports and connectors due to unclear labeling, leading to difficulty in connecting peripherals.",
-            "recommendation": "Provide clearer labeling for ports and connectors, using larger fonts or tactile indicators for better accessibility.",
-            "impact_estimate": "Improving labeling clarity can greatly enhance user experience, potentially increasing the overall accessibility score by 10-15%."
-          },
-          {
-            "diagnosis": "Some users encounter difficulties when attempting to mount the device in non-standard orientations due to limited mounting options.",
-            "recommendation": "Enhance the ease of mounting the device in various orientations by providing versatile mounting brackets or accessories.",
-            "impact_estimate": "Providing versatile mounting options can improve user flexibility and convenience, potentially resulting in a 8-12% increase in overall accessibility score."
-          },
-          {
-            "diagnosis": "Users with disabilities struggle to access and understand the user manual due to the lack of accessibility features, hindering their ability to troubleshoot or operate the device effectively.",
-            "recommendation": "Ensure that user manuals are available in multiple accessible formats, including digital text, audio, and braille.",
-            "impact_estimate": "Offering user manuals in accessible formats can empower users with disabilities and improve their overall experience, potentially increasing the overall accessibility score by 12-18%."
-          }
-        ]
+          "technology": "Lenovo ThinkCentre M720q Tiny Desktop",
+          "improvements": [
+              {
+                  "diagnosis": "Users, particularly those with visual impairments, struggle to identify ports and connectors due to unclear labeling (score: 4), leading to difficulty in connecting peripherals.",
+                  "recommendation": "Implement an augmented reality-based port identification tool that overlays interactive labels and instructional animations on the desktop's surface, guiding users to the correct ports and connectors. Additionally, integrate a voice-controlled virtual assistant that provides step-by-step audio instructions for connecting peripherals.",
+                  "impact_estimate": "Introducing an augmented reality-based port identification tool and voice-controlled virtual assistant can enhance user autonomy and confidence in peripheral setup, potentially increasing the overall accessibility score by 4-6 points.",
+                  "recommended_sites": [
+                      "https://www.google.com/search?q=augmented+reality+port+identification+tools",
+                      "https://www.google.com/search?q=voice+controlled+virtual+assistant+development"
+                  ]
+              },
+              {
+                  "diagnosis": "Some users encounter difficulties when attempting to mount the device in non-standard orientations due to limited mounting options (score: 3).",
+                  "recommendation": "Revolutionize mounting flexibility by leveraging magnetic levitation technology, enabling the desktop to seamlessly adhere to various surfaces without traditional brackets or screws. Additionally, explore a modular chassis design that allows users to reconfigure the desktop's layout according to their spatial constraints.",
+                  "impact_estimate": "Adopting magnetic levitation technology and a modular chassis design can unlock limitless mounting possibilities, potentially increasing the overall accessibility score by 3-5 points.",
+                  "recommended_sites": [
+                      "https://www.google.com/search?q=magnetic+levitation+mounting+technology",
+                      "https://www.google.com/search?q=modular+chassis+designs"
+                  ]
+              },
+              {
+                  "diagnosis": "Users with disabilities struggle to access and understand the user manual due to the lack of accessibility features (score: 2), hindering their ability to troubleshoot or operate the device effectively.",
+                  "recommendation": "Transform user manual accessibility by developing an interactive, multi-modal digital assistant that dynamically adapts content presentation based on user preferences and accessibility needs. Furthermore, integrate community-driven forums and video tutorials directly into the desktop's interface, fostering peer support and collaborative learning.",
+                  "impact_estimate": "Creating an interactive digital assistant and integrating community-driven support features can empower users with diverse needs, potentially increasing the overall accessibility score by 5-7 points.",
+                  "recommended_sites": [
+                      "https://www.google.com/search?q=interactive+digital+assistant+development",
+                      "https://www.google.com/search?q=community+driven+support+forums"
+                  ]
+              }
+          ]
       }
-    ]
-  }
-  
+  ]
+}
