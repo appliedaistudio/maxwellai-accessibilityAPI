@@ -31,9 +31,23 @@ This project aims to provide accessibility recommendations based on an input ass
 
 ## Notes:
 
-- **License Key**: If your setup requires a license key for accessing the LLM endpoint, ensure you provide it within the `licenseKey` variable in the HTML file.
-- **Modification**: Feel free to modify the HTML structure or JavaScript code to suit your project's requirements.
-- **Error Handling**: The code includes error handling to gracefully manage exceptions during execution. Check the console for any error messages.
+- **Processing Time**: The `getAccessibilityAnalysis` function takes approximately 60 seconds to complete its execution. Therefore, when designing the user interface, it's crucial to account for this delay to provide a seamless experience for the end user. Examples of input, output recommendations, and schemas can be found in the `assets/json` folder.
+
+- **Non-Deterministic Results**: The results produced by the function are non-deterministic. Even with the same input data, the function may generate different variations of the output. It's essential to set proper user expectations and inform them about this variability beforehand.
+
+- **Potential Mistakes**: This functionality is based on technology that can make mistakes. While the information provided can be valuable, there is a possibility of errors. It's advised to use the generated recommendations as a reference and verify them thoroughly before implementation. Users should be cautioned about the possibility of inaccuracies and encouraged to double-check the recommendations.
+
+- **Intermittent Failures**: The function may experience intermittent failures. If this occurs, it's worth retrying the function, as sometimes it works after retrying. However, be aware that retrying may potentially increase the wait time to 2 minutes or more.
+
+### Creating a Satisfying User Experience:
+
+Given the potential delays in processing and intermittent failures, here are some suggestions for creating a satisfying user experience:
+- **Offline Report Sending**: Offer users the option to receive the report offline later via email or download link.
+- **Estimated Countdown**: Provide an estimated countdown or progress bar to indicate the remaining processing time.
+- **Interactive Loading Screen**: Design an interactive loading screen with engaging visuals or messages to keep users informed and entertained during the processing period.
+- **Progressive Disclosure**: Display partial results or interim progress updates to keep users informed about the ongoing analysis.
+- **Error Handling**: Implement robust error handling mechanisms to gracefully handle intermittent failures and provide clear instructions to users on how to retry or proceed.
+
 
 ## Keep in Mind:
 
