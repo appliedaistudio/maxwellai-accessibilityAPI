@@ -35,7 +35,7 @@ This project aims to provide accessibility recommendations based on an input ass
 - **Modification**: Feel free to modify the HTML structure or JavaScript code to suit your project's requirements.
 - **Error Handling**: The code includes error handling to gracefully manage exceptions during execution. Check the console for any error messages.
 
-## Important Notes:
+## Keep in Mind:
 
 - **Processing Time**: The `getAccessibilityAnalysis` function takes approximately 60 seconds to complete its execution. Therefore, when designing the user interface, it's crucial to account for this delay to provide a seamless experience for the end user.
 
