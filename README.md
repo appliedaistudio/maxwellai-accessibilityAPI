@@ -9,7 +9,7 @@ This project aims to provide accessibility recommendations based on an input ass
 2. **Project Structure**: The project consists of HTML and JavaScript files, along with JSON files containing input examples and schemas.
 
 3. **Understanding the JavaScript Code**:
-   - `getAccessibilityAnalysis`: This function performs the accessibility analysis based on the provided input data and returns recommendations. It utilizes PhysarAI to understand the goal, analyze options and generate recommendations.
+   - `getAccessibilityAnalysis`: This function performs the accessibility analysis based on the provided input data and returns recommendations. It uses PhysarAI to understand the goal, analyze options and generate recommendations.
    - Other utility functions handle JSON validation, fetching data, and key extraction.
 
 4. **HTML Usage**:
