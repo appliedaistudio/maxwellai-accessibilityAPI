@@ -29,10 +29,6 @@ This project aims to provide accessibility recommendations based on an input ass
    - Once the analysis is complete, the HTML page displays a table summarizing recommendations.
    - Recommendations include technology, diagnosis, recommendation, impact estimate, and recommended sites.
 
-## How to Use
-...
-(Previous sections detailing usage instructions)
-
 ## Notes:
 
 - **Processing Time**: The `getAccessibilityAnalysis` function takes approximately 60 seconds to complete its execution. Therefore, when designing the user interface, it's crucial to account for this delay to provide a seamless experience for the end user.
